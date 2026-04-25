@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- SEO -->
+<title>Servis Verdiğimiz Markalar | Bruno Grup Espresso Makinesi Teknik Servis</title>
+<meta name="description" content="Victoria Arduino, Dalla Corte, Sanremo, La Marzocco, VBM, WEGA, Faema, La Cimbali ve 20+ marka espresso kahve makinesi yetkili teknik servisi. Bruno Grup.">
+<meta name="keywords" content="espresso makinesi markaları, kahve makinesi servisi, victoria arduino, dalla corte, sanremo, la marzocco, faema, wega, vbm">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://www.brunogrup.com/markalar.html">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;600;700;800&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/style.css">
+
+<style>
+.whatsapp-float{position:fixed;bottom:24px;right:24px;z-index:800;width:56px;height:56px;background:#25d366;border-radius:50%;display:flex;align-items:center;justify-content:center;box-shadow:0 4px 20px rgba(37,211,102,0.4);transition:transform .3s;}
+.whatsapp-float:hover{transform:scale(1.1);}
+.whatsapp-float svg{width:28px;height:28px;fill:#fff;}
+.phone-float{position:fixed;bottom:90px;right:24px;z-index:800;width:56px;height:56px;background:var(--yellow);border-radius:50%;display:flex;align-items:center;justify-content:center;box-shadow:0 4px 20px rgba(245,197,24,0.35);transition:transform .3s;}
+.phone-float:hover{transform:scale(1.1);}
+.phone-float svg{width:24px;height:24px;stroke:#111;fill:none;}
+
+.page-hero{
+  padding:calc(var(--nav-h) + 60px) clamp(20px,5vw,80px) 60px;
+  background:var(--dark);
+  border-bottom:1px solid rgba(255,255,255,0.06);
+  position:relative;overflow:hidden;
+}
+.page-hero::after{
+  content:'';position:absolute;top:0;left:0;right:0;height:3px;
+  background:linear-gradient(90deg,var(--yellow),var(--yellow-dk));
+}
+.page-hero-inner{max-width:1200px;margin:0 auto;}
+.breadcrumb{
+  display:flex;align-items:center;gap:8px;
+  font-size:12px;color:var(--gray);
+  margin-bottom:20px;
+  letter-spacing:0.5px;
+}
+.breadcrumb a{color:var(--gray);transition:color .3s;}
+.breadcrumb a:hover{color:var(--yellow);}
+.breadcrumb span{color:var(--white-mute);}
+
+.brands-full{padding:var(--pad);background:var(--black);}
+.brands-full-inner{max-width:1200px;margin:0 auto;}
+
+.brand-category{margin-bottom:72px;}
+.brand-category-title{
+  font-family:var(--font-head);
+  font-size:13px;font-weight:700;
+  letter-spacing:3px;text-transform:uppercase;
+  color:var(--gray);
+  margin-bottom:24px;
+  padding-bottom:12px;
+  border-bottom:1px solid rgba(255,255,255,0.06);
+  display:flex;align-items:center;gap:12px;
+}
+.brand-category-title::before{
+  content:'';width:24px;height:2px;background:var(--yellow);
+}
+
+.brands-full-grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fill,minmax(200px,1fr));
+  gap:3px;
+}
+
+.brand-card-full{
+  background:var(--dark2);
+  padding:36px 24px 28px;
+  text-align:center;
+  position:relative;
+  overflow:hidden;
+  transition:background var(--trans),transform var(--trans);
+  display:flex;flex-direction:column;align-items:center;
+}
+.brand-card-full:hover{background:var(--dark3);transform:translateY(-4px);}
+.brand-card-full::after{
+  content:'';position:absolute;bottom:0;left:0;right:0;
+  height:2px;background:var(--yellow);
+  transform:scaleX(0);transition:transform var(--trans);
+}
+.brand-card-full:hover::after{transform:scaleX(1);}
+
+.brand-card-img{
+  width:100%;height:100px;
+  object-fit:contain;
+  filter:brightness(0.9) grayscale(20%);
+  margin-bottom:20px;
+  transition:filter var(--trans);
+}
+.brand-card-full:hover .brand-card-img{filter:brightness(1) grayscale(0%);}
+
+.brand-card-name{
+  font-family:var(--font-head);
+  font-size:15px;font-weight:700;
+  letter-spacing:0.5px;text-transform:uppercase;
+  color:var(--white);margin-bottom:6px;
+  transition:color var(--trans);
+}
+.brand-card-full:hover .brand-card-name{color:var(--yellow);}
+
+.brand-card-status{
+  font-size:10px;letter-spacing:1.5px;text-transform:uppercase;
+  color:var(--gray);margin-bottom:16px;
+}
+.brand-card-status.yetkili{color:rgba(245,197,24,0.7);}
+
+.brand-card-btn{
+  font-family:var(--font-head);
+  font-size:11px;font-weight:700;
+  letter-spacing:1.5px;text-transform:uppercase;
+  color:var(--yellow);
+  padding:8px 20px;
+  border:1px solid rgba(245,197,24,0.25);
+  border-radius:var(--radius);
+  transition:background var(--trans),color var(--trans);
+  margin-top:auto;
+}
+.brand-card-full:hover .brand-card-btn{
+  background:var(--yellow);color:var(--black);
+}
+
+.cta-strip{
+  background:var(--yellow);
+  padding:clamp(40px,6vw,72px) clamp(20px,5vw,80px);
+  text-align:center;
+}
+.cta-strip h2{
+  font-family:var(--font-head);
+  font-size:clamp(28px,5vw,52px);
+  font-weight:800;color:var(--black);
+  margin-bottom:12px;line-height:1.1;
+}
+.cta-strip p{
+  font-size:clamp(14px,1.5vw,16px);
+  color:rgba(0,0,0,0.65);margin-bottom:32px;
+}
+.cta-strip .btn-black{
+  display:inline-flex;align-items:center;gap:10px;
+  background:var(--black);color:var(--white);
+  font-family:var(--font-head);font-size:15px;font-weight:700;
+  letter-spacing:1px;text-transform:uppercase;
+  padding:16px 40px;border-radius:var(--radius);
+  transition:background .3s;
+}
+.cta-strip .btn-black:hover{background:#333;}
+</style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav id="nav">
+  <a href="index.html" class="nav-logo">
+    <img src="assets/images/logo.png" alt="Bruno Grup" onerror="this.style.display='none';this.nextElementSibling.style.display='block'">
+    <span style="display:none;font-family:'Barlow Condensed',sans-serif;font-size:22px;font-weight:800;">BRUNO<span style="color:#f5c518;">GRUP</span></span>
+  </a>
+  <ul class="nav-links">
+    <li><a href="index.html" class="nav-link">Ana Sayfa</a></li>
+    <li><a href="hakkimizda.html" class="nav-link">Hakkımızda</a></li>
+    <li class="nav-dropdown">
+      <div class="nav-dropdown-toggle">Markalar
+        <svg width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 4l4 4 4-4"/></svg>
+      </div>
+      <div class="nav-dropdown-menu">
+        <a href="victoria-arduino.html">Victoria Arduino</a>
+        <a href="dalla-corte.html">Dalla Corte</a>
+        <a href="sanremo.html">Sanremo</a>
+        <a href="la-marzocco.html">La Marzocco</a>
+        <a href="vbm.html">VBM</a>
+        <a href="wega.html">WEGA</a>
+        <a href="la-cimbali.html">La Cimbali</a>
+        <a href="nuova-simonelli.html">Nuova Simonelli</a>
+        <a href="faema.html">Faema</a>
+        <a href="wmf.html">WMF</a>
+        <a href="astoria.html">Astoria</a>
+        <a href="casadio.html">Casadio</a>
+        <a href="markalar.html" style="color:#f5c518;font-weight:700;">Tüm Markalar →</a>
+      </div>
+    </li>
+    <li><a href="referanslar.html" class="nav-link">Referanslar</a></li>
+    <li><a href="iletisim.html" class="nav-link">İletişim</a></li>
+  </ul>
+  <div class="nav-right">
+    <a href="tel:+905343726434" class="nav-phone">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 10.8 19.79 19.79 0 01.22 2.18 2 2 0 012.18 0h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.91 7.09a16 16 0 006 6l.56-.56a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+      0534 372 64 34
+    </a>
+    <a href="iletisim.html" class="nav-cta">Servis Al</a>
+  </div>
+  <button class="hamburger" id="hb" aria-label="Menü"><span></span><span></span><span></span></button>
+</nav>
+
+<div class="mobile-nav" id="mnav">
+  <a href="index.html" class="mobile-nav-link">Ana Sayfa</a>
+  <a href="hakkimizda.html" class="mobile-nav-link">Hakkımızda</a>
+  <a href="markalar.html" class="mobile-nav-link active">Tüm Markalar</a>
+  <a href="referanslar.html" class="mobile-nav-link">Referanslar</a>
+  <a href="iletisim.html" class="mobile-nav-link">İletişim</a>
+  <a href="tel:+905343726434" class="mobile-nav-cta">📞 0534 372 64 34</a>
+</div>
+<div class="nav-overlay" id="novl" onclick="closeMenu()"></div>
+
+<!-- PAGE HERO -->
+<div class="page-hero">
+  <div class="page-hero-inner">
+    <div class="breadcrumb">
+      <a href="index.html">Ana Sayfa</a>
+      <span>›</span>
+      <span>Markalar</span>
+    </div>
+    <div class="tag">Yetkili Teknik Servis</div>
+    <h1 class="section-title">Servis Verdiğimiz <span>Tüm Markalar</span></h1>
+    <p class="section-sub">20'den fazla premium espresso makinesi markasında yetkili teknik servis, bakım ve onarım hizmeti sunuyoruz.</p>
+  </div>
+</div>
+
+<!-- MARKALAR -->
+<div class="brands-full">
+  <div class="brands-full-inner">
+
+    <!-- Yetkili Servisler -->
+    <div class="brand-category reveal">
+      <div class="brand-category-title">Yetkili Servis Markalarımız</div>
+      <div class="brands-full-grid">
+
+        <a href="victoria-arduino.html" class="brand-card-full">
+          <img class="brand-card-img" src="https://brunogrup.com/wp-content/uploads/2025/02/victoria-arduino-eagle-tempo-espresso-kahve-makinesi-2-gruplu-beyaz-espresso-kahve-makineleri-victoria-arduino-yetkili-servis-victoria-arduino-teknik-servis-bruno-grup.jpg" alt="Victoria Arduino Servisi">
+          <div class="brand-card-name">Victoria Arduino</div>
+          <div class="brand-card-status yetkili">Yetkili Servis</div>
+          <div class="brand-card-btn">Servis Al →</div>
+        </a>
+
+        <a href="dalla-corte.html" class="brand-card-full">
+          <img class="brand-card-img" src="https://brunogrup.com/wp-content/uploads/2025/02/dalla-corte-yetkili-servis-bruno-grup-Dalla-Corte-teknik-servis-bruno-grup-1-768x526.png" alt="Dalla Corte Servisi">
+          <div class="brand-card-name">Dalla Corte</div>
+          <div class="brand-card-status yetkili">Yetkili Servis</div>
+          <div class="brand-card-btn">Servis Al →</div>
+        </a>
+
+        <a href="sanremo.html" class="brand-card-full">
+          <img class="brand-card-img" src="https://brunogrup.com/wp-content/uploads/2025/11/sanremo_yetkil_teknik_servis_bruno_grup_sanremo_servis_sanremo_ariza_sanremo_tamir_bruno_grup_4-1024x576.jpg" alt="Sanremo Servisi">
+          <div class="brand-card-name">Sanremo</div>
+          <div class="brand-card-status yetkili">Yetkili Servis</div>
+          <div class="brand-card-btn">Servis Al →</div>
+        </a>
+
+        <a href="vbm.html" class="brand-card-full">
+          <img class="brand-card-img" src="https://brunogrup.com/wp-content/uploads/2025/11/vbm_yetkil_teknik_servis_bruno_grup_vbm_servis_vbm_ariza_vbm_tamir_bruno_grup.jpg" alt="VBM Servisi">
+          <div class="brand-card-name">VBM</div>
+          <div class="brand-card-status yetkili">Yetkili Servis</div>
+          <div class="brand-card-btn">Servis Al →</div>
+        </a>
+
+        <a href="wega.html" class="brand-card-full">
+          <img class="brand-card-img" src="https://brunogrup.com/wp-content/uploads/2025/11/wega_yetkil_teknik_servis_bruno_grup_wega_espresso_servis_wega_ariza_wega_tamir_bruno_grup_2.webp-768x768.png" alt="WEGA Servisi">
+          <div class="brand-card-name">WEGA</div>
+          <div class="brand-card-status yetkili">Yetkili Servis</div>
+          <div class="brand-card-btn">Servis Al →</div>
+        </a>
+
+        <a href="la-marzocco.html" class="brand-card-full">
+          <img class="brand-card-img" src="https://brunogrup.com/wp-content/uploads/2025/02/faema_teknik_servis_bruno_grup_faema_yetkili_servis_bruno_grup.jpg" alt="La Marzocco Servisi">
+          <div class="brand-card-name">La Marzocco</div>
+          <div class="brand-card-status yetkili">Özel Servis</div>
+          <div class="brand-card-btn">Servis Al →</div>
+        </a>
+
+        <a href="la-cimbali.html" class="brand-card-full">
+          <img class="brand-card-img" src="https://brunogrup.com/wp-content/uploads/2025/02/faema_teknik_servis_bruno_grup_faema_yetkili_servis_bruno_grup.jpg" alt="La Cimbali Servisi">
+          <div class="brand-card-name">La Cimbali</div>
+          <div class="brand-card-status yetkili">Yetkili Servis</div>
+          <div class="brand-card-btn">Servis Al →</div>
+        </a>
+
+        <a href="nuova-simonelli.html" class="brand-card-full">
+          <img class="brand-card-img" src="https://brunogrup.com/wp-content/uploads/2025/02/faema_teknik_servis_bruno_grup_faema_yetkili_servis_bruno_grup.jpg" alt="Nuova Simonelli Servisi">
+          <div class="brand-card-name">Nuova Simonelli</div>
+          <div class="brand-card-status yetkili">Yetkili Servis</div>
+          <div class="brand-card-btn">Servis Al →</div>
+        </a>
+
+        <a href="faema.html" class="brand-card-full">
+          <img class="brand-card-img" src="https://brunogrup.com/wp-content/uploads/2025/02/faema_teknik_servis_bruno_grup_faema_yetkili_servis_bruno_grup.jpg" alt="Faema Servisi">
+          <div class="brand-card-name">Faema</div>
+          <div class="brand-card-status yetkili">Yetkili Servis</div>
+          <div class="brand-card-btn">Servis Al →</div>
+        </a>
+
+        <a href="wmf.html" class="brand-card-full">
+          <img class="brand-card-img" src="https://brunogrup.com/wp-content/uploads/2025/02/faema_teknik_servis_bruno_grup_faema_yetkili_servis_bruno_grup.jpg" alt="WMF Servisi">
+          <div class="brand-card-name">WMF</div>
+          <div class="brand-card-status yetkili">Yetkili Servis</div>
+          <div class="brand-card-btn">Servis Al →</div>
+        </a>
+
+        <a href="astoria.html" class="brand-card-full">
+          <img class="brand-card-img" src="https://brunogrup.com/wp-content/uploads/2025/02/faema_teknik_servis_bruno_grup_faema_yetkili_servis_bruno_grup.jpg" alt="Astoria Servisi">
+          <div class="brand-card-name">Astoria</div>
+          <div class="brand-card-status yetkili">Yetkili Servis</div>
+          <div class="brand-card-btn">Servis Al →</div>
+        </a>
+
+        <a href="casadio.html" class="brand-card-full">
+          <img class="brand-card-img" src="https://brunogrup.com/wp-content/uploads/2025/02/faema_teknik_servis_bruno_grup_faema_yetkili_servis_bruno_grup.jpg" alt="Casadio Servisi">
+          <div class="brand-card-name">Casadio</div>
+          <div class="brand-card-status yetkili">Yetkili Servis</div>
+          <div class="brand-card-btn">Servis Al →</div>
+        </a>
+
+      </div>
+    </div>
+
+    <!-- Diğer Markalar -->
+    <div class="brand-category reveal">
+      <div class="brand-category-title">Diğer Servis Verdiğimiz Markalar</div>
+      <div class="brands-full-grid">
+
+        <a href="iletisim.html" class="brand-card-full">
+          <div style="height:100px;display:flex;align-items:center;justify-content:center;margin-bottom:20px;">
+            <span style="font-family:'Barlow Condensed',sans-serif;font-size:22px;font-weight:800;color:var(--white-mute);">Slayer</span>
+          </div>
+          <div class="brand-card-name">Slayer</div>
+          <div class="brand-card-status">Teknik Servis</div>
+          <div class="brand-card-btn">Servis Al →</div>
+        </a>
+
+        <a href="iletisim.html" class="brand-card-full">
+          <div style="height:100px;display:flex;align-items:center;justify-content:center;margin-bottom:20px;">
+            <span style="font-family:'Barlow Condensed',sans-serif;font-size:22px;font-weight:800;color:var(--white-mute);">Bezzera</span>
+          </div>
+          <div class="brand-card-name">Bezzera</div>
+          <div class="brand-card-status">Teknik Servis</div>
+          <div class="brand-card-btn">Servis Al →</div>
+        </a>
+
+        <a href="iletisim.html" class="brand-card-full">
+          <div style="height:100px;display:flex;align-items:center;justify-content:center;margin-bottom:20px;">
+            <span style="font-family:'Barlow Condensed',sans-serif;font-size:22px;font-weight:800;color:var(--white-mute);">Elektra</span>
+          </div>
+          <div class="brand-card-name">Elektra</div>
+          <div class="brand-card-status">Teknik Servis</div>
+          <div class="brand-card-btn">Servis Al →</div>
+        </a>
+
+        <a href="iletisim.html" class="brand-card-full">
+          <div style="height:100px;display:flex;align-items:center;justify-content:center;margin-bottom:20px;">
+            <span style="font-family:'Barlow Condensed',sans-serif;font-size:22px;font-weight:800;color:var(--white-mute);">Empero</span>
+          </div>
+          <div class="brand-card-name">Empero</div>
+          <div class="brand-card-status">Teknik Servis</div>
+          <div class="brand-card-btn">Servis Al →</div>
+        </a>
+
+        <a href="iletisim.html" class="brand-card-full">
+          <div style="height:100px;display:flex;align-items:center;justify-content:center;margin-bottom:20px;">
+            <span style="font-family:'Barlow Condensed',sans-serif;font-size:22px;font-weight:800;color:var(--white-mute);">Saeco</span>
+          </div>
+          <div class="brand-card-name">Saeco</div>
+          <div class="brand-card-status">Teknik Servis</div>
+          <div class="brand-card-btn">Servis Al →</div>
+        </a>
+
+        <a href="iletisim.html" class="brand-card-full">
+          <div style="height:100px;display:flex;align-items:center;justify-content:center;margin-bottom:20px;">
+            <span style="font-family:'Barlow Condensed',sans-serif;font-size:22px;font-weight:800;color:var(--white-mute);">Tempesta</span>
+          </div>
+          <div class="brand-card-name">Tempesta</div>
+          <div class="brand-card-status">Teknik Servis</div>
+          <div class="brand-card-btn">Servis Al →</div>
+        </a>
+
+        <a href="iletisim.html" class="brand-card-full">
+          <div style="height:100px;display:flex;align-items:center;justify-content:center;margin-bottom:20px;">
+            <span style="font-family:'Barlow Condensed',sans-serif;font-size:22px;font-weight:800;color:var(--white-mute);">Kalerm</span>
+          </div>
+          <div class="brand-card-name">Kalerm</div>
+          <div class="brand-card-status">Teknik Servis</div>
+          <div class="brand-card-btn">Servis Al →</div>
+        </a>
+
+        <a href="iletisim.html" class="brand-card-full">
+          <div style="height:100px;display:flex;align-items:center;justify-content:center;margin-bottom:20px;">
+            <span style="font-family:'Barlow Condensed',sans-serif;font-size:22px;font-weight:800;color:var(--white-mute);">Mypresso</span>
+          </div>
+          <div class="brand-card-name">Mypresso</div>
+          <div class="brand-card-status">Teknik Servis</div>
+          <div class="brand-card-btn">Servis Al →</div>
+        </a>
+
+        <a href="iletisim.html" class="brand-card-full">
+          <div style="height:100px;display:flex;align-items:center;justify-content:center;margin-bottom:20px;">
+            <span style="font-family:'Barlow Condensed',sans-serif;font-size:22px;font-weight:800;color:var(--white-mute);">Di Giorgio Lab</span>
+          </div>
+          <div class="brand-card-name">Di Giorgio Lab</div>
+          <div class="brand-card-status">Teknik Servis</div>
+          <div class="brand-card-btn">Servis Al →</div>
+        </a>
+
+        <a href="iletisim.html" class="brand-card-full">
+          <div style="height:100px;display:flex;align-items:center;justify-content:center;margin-bottom:20px;">
+            <span style="font-family:'Barlow Condensed',sans-serif;font-size:22px;font-weight:800;color:var(--white-mute);">XLVI</span>
+          </div>
+          <div class="brand-card-name">XLVI</div>
+          <div class="brand-card-status">Teknik Servis</div>
+          <div class="brand-card-btn">Servis Al →</div>
+        </a>
+
+        <a href="iletisim.html" class="brand-card-full">
+          <div style="height:100px;display:flex;align-items:center;justify-content:center;margin-bottom:20px;">
+            <span style="font-family:'Barlow Condensed',sans-serif;font-size:22px;font-weight:800;color:var(--white-mute);">İdose</span>
+          </div>
+          <div class="brand-card-name">İdose</div>
+          <div class="brand-card-status">Teknik Servis</div>
+          <div class="brand-card-btn">Servis Al →</div>
+        </a>
+
+        <a href="iletisim.html" class="brand-card-full" style="background:rgba(245,197,24,0.05);border:1px dashed rgba(245,197,24,0.2);">
+          <div style="height:100px;display:flex;align-items:center;justify-content:center;margin-bottom:20px;">
+            <span style="font-size:36px;">☕</span>
+          </div>
+          <div class="brand-card-name">Markanız?</div>
+          <div class="brand-card-status">Listede Yok Mu?</div>
+          <div class="brand-card-btn" style="border-color:rgba(245,197,24,0.4);">Bize Sorun →</div>
+        </a>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- CTA -->
+<div class="cta-strip reveal">
+  <h2>Makinenizde Sorun mu Var?</h2>
+  <p>Hemen arayın, aynı gün yerinde teknik servis gönderelim.</p>
+  <a href="tel:+905343726434" class="btn-black">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 10.8 19.79 19.79 0 01.22 2.18 2 2 0 012.18 0h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.91 7.09a16 16 0 006 6l.56-.56a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+    0534 372 64 34
+  </a>
+</div>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-grid">
+    <div>
+      <div class="footer-logo">
+        <img src="assets/images/logo.png" alt="Bruno Grup" onerror="this.style.display='none';this.nextElementSibling.style.display='block'">
+        <span style="display:none;font-family:'Barlow Condensed',sans-serif;font-size:24px;font-weight:800;">BRUNO<span style="color:#f5c518;">GRUP</span></span>
+      </div>
+      <p class="footer-desc">Endüstriyel espresso kahve makinelerinde 20+ marka yetkili teknik servis.</p>
+    </div>
+    <div>
+      <div class="footer-title">Hizmetler</div>
+      <ul class="footer-links">
+        <li><a href="iletisim.html">Teknik Servis</a></li>
+        <li><a href="iletisim.html">Profesyonel Bakım</a></li>
+        <li><a href="iletisim.html">Makine Satışı</a></li>
+        <li><a href="iletisim.html">İşletme Kurulumu</a></li>
+      </ul>
+    </div>
+    <div>
+      <div class="footer-title">Popüler Markalar</div>
+      <ul class="footer-links">
+        <li><a href="victoria-arduino.html">Victoria Arduino</a></li>
+        <li><a href="dalla-corte.html">Dalla Corte</a></li>
+        <li><a href="sanremo.html">Sanremo</a></li>
+        <li><a href="la-marzocco.html">La Marzocco</a></li>
+      </ul>
+    </div>
+    <div>
+      <div class="footer-title">İletişim</div>
+      <ul class="footer-links">
+        <li><a href="tel:+905343726434">0534 372 64 34</a></li>
+        <li><a href="https://wa.me/905343726434">WhatsApp</a></li>
+        <li><a href="index.html">Ana Sayfa</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span class="footer-copy">© 2025 Bruno Grup. Tüm hakları saklıdır.</span>
+    <span class="footer-dev"><a href="https://www.wixmedya.com" target="_blank">Web Tasarım & Reklam: www.wixmedya.com</a></span>
+  </div>
+</footer>
+
+<a href="https://wa.me/905343726434" target="_blank" class="whatsapp-float" aria-label="WhatsApp">
+  <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+</a>
+<a href="tel:+905343726434" class="phone-float" aria-label="Ara">
+  <svg viewBox="0 0 24 24" fill="none" stroke="#111" stroke-width="2.5"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 10.8 19.79 19.79 0 01.22 2.18 2 2 0 012.18 0h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.91 7.09a16 16 0 006 6l.56-.56a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+</a>
+
+<script>
+window.addEventListener('scroll',()=>{document.getElementById('nav').classList.toggle('scrolled',window.scrollY>60);});
+const hb=document.getElementById('hb'),mnav=document.getElementById('mnav'),novl=document.getElementById('novl');
+hb.addEventListener('click',()=>{hb.classList.toggle('open');mnav.classList.toggle('open');novl.classList.toggle('show');document.body.style.overflow=mnav.classList.contains('open')?'hidden':'';});
+function closeMenu(){hb.classList.remove('open');mnav.classList.remove('open');novl.classList.remove('show');document.body.style.overflow='';}
+const obs=new IntersectionObserver(e=>{e.forEach(x=>{if(x.isIntersecting)x.target.classList.add('in');});},{threshold:0.1});
+document.querySelectorAll('.reveal').forEach(el=>obs.observe(el));
+</script>
+</body>
+</html>
