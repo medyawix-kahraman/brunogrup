@@ -154,7 +154,7 @@ input,textarea,select{font-family:var(--font-body);}
 }
 #nav.scrolled{height:60px;background:rgba(17,17,17,0.98);}
 
-.nav-logo img{height:36px;width:auto;}
+.nav-logo img{height:52px;width:auto;}
 
 .nav-links{
   display:flex;align-items:center;gap:8px;
@@ -663,7 +663,7 @@ footer{
 
 /* ════════ MARKA SAYFASI ════════ */
 .brand-hero{
-  padding:calc(var(--nav-h) + 60px) clamp(20px,5vw,80px) 60px;
+  padding:calc(112px + 60px) clamp(20px,5vw,80px) 60px;
   background:var(--dark);
   position:relative;overflow:hidden;
 }
@@ -768,7 +768,7 @@ footer{
 
 /* Sayfa hero */
 .page-hero{
-  padding:calc(var(--nav-h) + 60px) clamp(20px,5vw,80px) 0;
+  padding:calc(112px + 60px) clamp(20px,5vw,80px) 0;
   background:var(--dark);
   position:relative;overflow:hidden;
 }
@@ -900,44 +900,52 @@ footer{
 
 <!-- NAV -->
 <nav id="nav">
-  <a href="index.html" class="nav-logo">
-    <img src="assets/images/logo.png" alt="Bruno Grup" onerror="this.style.display='none';this.nextElementSibling.style.display='block'">
-    <span style="display:none;font-family:'Barlow Condensed',sans-serif;font-size:22px;font-weight:800;">BRUNO<span style="color:#f5c518;">GRUP</span></span>
-  </a>
-  <ul class="nav-links">
-    <li><a href="index.html" class="nav-link">Ana Sayfa</a></li>
-    <li><a href="hakkimizda.html" class="nav-link">Hakkımızda</a></li>
-    <li class="nav-dropdown">
-      <div class="nav-dropdown-toggle">Markalar
-        <svg width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 4l4 4 4-4"/></svg>
-      </div>
-      <div class="nav-dropdown-menu">
-        <a href="victoria-arduino.html" style="color:#f5c518;">Victoria Arduino</a>
-        <a href="dalla-corte.html">Dalla Corte</a>
-        <a href="sanremo.html">Sanremo</a>
-        <a href="la-marzocco.html">La Marzocco</a>
-        <a href="vbm.html">VBM</a>
-        <a href="wega.html">WEGA</a>
-        <a href="la-cimbali.html">La Cimbali</a>
-        <a href="nuova-simonelli.html">Nuova Simonelli</a>
-        <a href="faema.html">Faema</a>
-        <a href="wmf.html">WMF</a>
-        <a href="astoria.html">Astoria</a>
-        <a href="casadio.html">Casadio</a>
-        <a href="markalar.html" style="color:#f5c518;font-weight:700;">Tüm Markalar →</a>
-      </div>
-    </li>
-    <li><a href="referanslar.html" class="nav-link">Referanslar</a></li>
-    <li><a href="iletisim.html" class="nav-link">İletişim</a></li>
-  </ul>
-  <div class="nav-right">
-    <a href="tel:+905343726434" class="nav-phone">
-      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 10.8 19.79 19.79 0 01.22 2.18 2 2 0 012.18 0h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.91 7.09a16 16 0 006 6l.56-.56a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
-      0534 372 64 34
+  <!-- Beyaz üst şerit - Logo -->
+  <div class="nav-strip">
+    <a href="index.html">
+      <img src="https://brunogrup.com/wp-content/uploads/2023/01/brunogruplogo1.png" alt="Bruno Grup Logo" style="height:44px;width:auto;">
     </a>
-    <a href="iletisim.html" class="nav-cta">Servis Al</a>
   </div>
-  <button class="hamburger" id="hb" aria-label="Menü"><span></span><span></span><span></span></button>
+  <!-- Koyu alt şerit - Linkler -->
+  <div class="nav-bar">
+    <ul class="nav-links">
+      <li><a href="index.html" class="nav-link">Ana Sayfa</a></li>
+      <li><a href="hakkimizda.html" class="nav-link">Hakkımızda</a></li>
+      <li class="nav-dropdown">
+        <div class="nav-dropdown-toggle">Markalar
+          <svg width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 4l4 4 4-4"/></svg>
+        </div>
+        <div class="nav-dropdown-menu">
+          <a href="victoria-arduino.html">Victoria Arduino</a>
+          <a href="dalla-corte.html">Dalla Corte</a>
+          <a href="sanremo.html">Sanremo</a>
+          <a href="la-marzocco.html">La Marzocco</a>
+          <a href="vbm.html">VBM</a>
+          <a href="wega.html">WEGA</a>
+          <a href="la-cimbali.html">La Cimbali</a>
+          <a href="nuova-simonelli.html">Nuova Simonelli</a>
+          <a href="faema.html">Faema</a>
+          <a href="wmf.html">WMF</a>
+          <a href="astoria.html">Astoria</a>
+          <a href="casadio.html">Casadio</a>
+          <a href="di-giorgio-lab.html">Di Giorgio Lab</a>
+          <a href="kvdw.html">KVDW</a>
+          <a href="rocket.html">Rocket</a>
+          <a href="markalar.html" style="color:#f5c518;font-weight:700;">Tüm Markalar →</a>
+        </div>
+      </li>
+      <li><a href="referanslar.html" class="nav-link">Referanslar</a></li>
+      <li><a href="iletisim.html" class="nav-link">İletişim</a></li>
+    </ul>
+    <div class="nav-right">
+      <a href="tel:+905343726434" class="nav-phone">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 10.8 19.79 19.79 0 01.22 2.18 2 2 0 012.18 0h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.91 7.09a16 16 0 006 6l.56-.56a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+        0534 372 64 34
+      </a>
+      <a href="iletisim.html" class="nav-cta">Servis Al</a>
+    </div>
+    <button class="hamburger" id="hb" aria-label="Menü"><span></span><span></span><span></span></button>
+  </div>
 </nav>
 <div class="mobile-nav" id="mnav">
   <a href="index.html" class="mobile-nav-link">Ana Sayfa</a>
@@ -991,7 +999,7 @@ footer{
     </div>
     <div class="hero-img-wrap reveal">
       <div class="hero-img-badge">Yetkili Servis</div>
-      <img src="https://brunogrup.com/wp-content/uploads/2025/02/victoria-arduino-eagle-tempo-espresso-kahve-makinesi-2-gruplu-beyaz-espresso-kahve-makineleri-victoria-arduino-yetkili-servis-victoria-arduino-teknik-servis-bruno-grup.jpg"
+      <img src="https://brunogrup.com/wp-content/uploads/2024/11/victoria-arduino-yetkili-servis-bruno-grup-victoria-arduino-teknik-servis-bruno-grup-1024x274.png"
            alt="Victoria Arduino Espresso Makinesi Teknik Servis Bruno Grup">
     </div>
   </div>
@@ -1116,7 +1124,7 @@ footer{
         </div>
       </div>
       <div class="why-image reveal">
-        <img src="https://brunogrup.com/wp-content/uploads/2025/02/victoria-arduino-eagle-tempo-espresso-kahve-makinesi-2-gruplu-beyaz-espresso-kahve-makineleri-victoria-arduino-yetkili-servis-victoria-arduino-teknik-servis-bruno-grup.jpg"
+        <img src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?w=800&q=80"
              alt="Victoria Arduino Servis">
         <div class="why-image-badge">
           <div class="n">✓</div>
@@ -1231,8 +1239,8 @@ footer{
   <div class="footer-grid">
     <div>
       <div class="footer-logo">
-        <img src="assets/images/logo.png" alt="Bruno Grup" onerror="this.style.display='none';this.nextElementSibling.style.display='block'">
-        <span style="display:none;font-family:'Barlow Condensed',sans-serif;font-size:24px;font-weight:800;">BRUNO<span style="color:#f5c518;">GRUP</span></span>
+        <img src="https://brunogrup.com/wp-content/uploads/2023/01/brunogruplogo1.png" alt="Bruno Grup Logo" style="height:44px;width:auto;">
+        
       </div>
       <p class="footer-desc">Endüstriyel espresso kahve makinelerinde 20+ marka yetkili teknik servis. 7/24 destek, aynı gün yerinde servis.</p>
     </div>
