@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Referanslar | Bruno Grup — Espresso Makinesi Teknik Servis</title>
+<meta name="description" content="Bruno Grup referansları. Türkiye'nin önde gelen kafesi, restoran ve otellerine espresso makinesi teknik servis ve bakım hizmeti veriyoruz.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://www.brunogrup.com/referanslar.html">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;600;700;800&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/style.css">
+<style>
+.whatsapp-float{position:fixed;bottom:24px;right:24px;z-index:800;width:56px;height:56px;background:#25d366;border-radius:50%;display:flex;align-items:center;justify-content:center;box-shadow:0 4px 20px rgba(37,211,102,0.4);transition:transform .3s;}
+.whatsapp-float:hover{transform:scale(1.1);}
+.whatsapp-float svg{width:28px;height:28px;fill:#fff;}
+.phone-float{position:fixed;bottom:90px;right:24px;z-index:800;width:56px;height:56px;background:var(--yellow);border-radius:50%;display:flex;align-items:center;justify-content:center;box-shadow:0 4px 20px rgba(245,197,24,0.35);transition:transform .3s;}
+.phone-float:hover{transform:scale(1.1);}
+.phone-float svg{width:24px;height:24px;stroke:#111;fill:none;}
+
+.page-hero{padding:calc(var(--nav-h) + 60px) clamp(20px,5vw,80px) 60px;background:var(--dark);position:relative;overflow:hidden;}
+.page-hero::after{content:'';position:absolute;top:0;left:0;right:0;height:3px;background:linear-gradient(90deg,var(--yellow),var(--yellow-dk));}
+.page-hero-inner{max-width:1200px;margin:0 auto;}
+.breadcrumb{display:flex;align-items:center;gap:8px;font-size:12px;color:var(--gray);margin-bottom:20px;}
+.breadcrumb a{color:var(--gray);transition:color .3s;}
+.breadcrumb a:hover{color:var(--yellow);}
+
+.ref-section{padding:var(--pad);background:var(--black);}
+.ref-inner{max-width:1200px;margin:0 auto;}
+
+/* Yorumlar */
+.testimonials-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(320px,1fr));gap:3px;margin-top:48px;}
+.testi-card{background:var(--dark2);padding:36px 28px;position:relative;overflow:hidden;transition:background var(--trans);}
+.testi-card:hover{background:var(--dark3);}
+.testi-stars{color:var(--yellow);font-size:18px;margin-bottom:16px;letter-spacing:2px;}
+.testi-text{font-size:14px;color:var(--white-dim);line-height:1.9;margin-bottom:24px;font-style:italic;}
+.testi-text::before{content:'"';font-family:var(--font-head);font-size:48px;color:rgba(245,197,24,0.2);line-height:0;vertical-align:-20px;margin-right:4px;}
+.testi-author{display:flex;align-items:center;gap:14px;}
+.testi-avatar{width:44px;height:44px;border-radius:50%;background:var(--yellow);display:flex;align-items:center;justify-content:center;font-family:var(--font-head);font-size:18px;font-weight:800;color:var(--black);flex-shrink:0;}
+.testi-name{font-family:var(--font-head);font-size:15px;font-weight:700;color:var(--white);}
+.testi-role{font-size:11px;color:var(--gray);letter-spacing:0.5px;margin-top:2px;}
+.testi-brand{display:inline-block;margin-top:6px;font-size:10px;letter-spacing:2px;text-transform:uppercase;color:var(--yellow);background:rgba(245,197,24,0.1);padding:3px 10px;border-radius:100px;}
+
+/* Referans logoları */
+.logos-section{padding:var(--pad);background:var(--dark);}
+.logos-inner{max-width:1200px;margin:0 auto;}
+.logos-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(180px,1fr));gap:3px;margin-top:40px;}
+.logo-card{background:var(--dark2);padding:28px 20px;text-align:center;transition:background var(--trans);}
+.logo-card:hover{background:var(--dark3);}
+.logo-placeholder{font-family:var(--font-head);font-size:16px;font-weight:700;color:rgba(255,255,255,0.35);letter-spacing:1px;transition:color var(--trans);}
+.logo-card:hover .logo-placeholder{color:rgba(255,255,255,0.7);}
+.logo-type{font-size:10px;color:var(--yellow);letter-spacing:2px;text-transform:uppercase;margin-top:8px;}
+
+/* Sayılar */
+.numbers-strip{background:var(--yellow);padding:clamp(40px,6vw,72px) clamp(20px,5vw,80px);}
+.numbers-inner{max-width:1200px;margin:0 auto;display:grid;grid-template-columns:repeat(4,1fr);gap:40px;text-align:center;}
+.num-big{font-family:var(--font-head);font-size:clamp(40px,6vw,64px);font-weight:800;color:var(--black);line-height:1;}
+.num-label{font-size:12px;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:rgba(0,0,0,0.55);margin-top:8px;}
+
+.cta-box{background:var(--dark);padding:clamp(40px,6vw,72px) clamp(20px,5vw,80px);text-align:center;}
+.cta-box h2{font-family:var(--font-head);font-size:clamp(28px,5vw,52px);font-weight:800;color:var(--white);margin-bottom:12px;}
+.cta-box p{font-size:clamp(14px,1.5vw,16px);color:var(--white-mute);margin-bottom:32px;}
+
+@media(max-width:768px){.numbers-inner{grid-template-columns:1fr 1fr;}}
+</style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav id="nav">
+  <a href="index.html" class="nav-logo">
+    <img src="assets/images/logo.png" alt="Bruno Grup" onerror="this.style.display='none';this.nextElementSibling.style.display='block'">
+    <span style="display:none;font-family:'Barlow Condensed',sans-serif;font-size:22px;font-weight:800;">BRUNO<span style="color:#f5c518;">GRUP</span></span>
+  </a>
+  <ul class="nav-links">
+    <li><a href="index.html" class="nav-link">Ana Sayfa</a></li>
+    <li><a href="hakkimizda.html" class="nav-link">Hakkımızda</a></li>
+    <li class="nav-dropdown">
+      <div class="nav-dropdown-toggle">Markalar
+        <svg width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 4l4 4 4-4"/></svg>
+      </div>
+      <div class="nav-dropdown-menu">
+        <a href="victoria-arduino.html">Victoria Arduino</a><a href="dalla-corte.html">Dalla Corte</a>
+        <a href="sanremo.html">Sanremo</a><a href="la-marzocco.html">La Marzocco</a>
+        <a href="vbm.html">VBM</a><a href="wega.html">WEGA</a>
+        <a href="la-cimbali.html">La Cimbali</a><a href="nuova-simonelli.html">Nuova Simonelli</a>
+        <a href="faema.html">Faema</a><a href="wmf.html">WMF</a>
+        <a href="astoria.html">Astoria</a><a href="casadio.html">Casadio</a>
+        <a href="markalar.html" style="color:#f5c518;font-weight:700;">Tüm Markalar →</a>
+      </div>
+    </li>
+    <li><a href="referanslar.html" class="nav-link active">Referanslar</a></li>
+    <li><a href="iletisim.html" class="nav-link">İletişim</a></li>
+  </ul>
+  <div class="nav-right">
+    <a href="tel:+905343726434" class="nav-phone">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 10.8 19.79 19.79 0 01.22 2.18 2 2 0 012.18 0h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.91 7.09a16 16 0 006 6l.56-.56a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+      0534 372 64 34
+    </a>
+    <a href="iletisim.html" class="nav-cta">Servis Al</a>
+  </div>
+  <button class="hamburger" id="hb" aria-label="Menü"><span></span><span></span><span></span></button>
+</nav>
+<div class="mobile-nav" id="mnav">
+  <a href="index.html" class="mobile-nav-link">Ana Sayfa</a>
+  <a href="hakkimizda.html" class="mobile-nav-link">Hakkımızda</a>
+  <a href="markalar.html" class="mobile-nav-link">Tüm Markalar</a>
+  <a href="referanslar.html" class="mobile-nav-link">Referanslar</a>
+  <a href="iletisim.html" class="mobile-nav-link">İletişim</a>
+  <a href="tel:+905343726434" class="mobile-nav-cta">📞 0534 372 64 34</a>
+</div>
+<div class="nav-overlay" id="novl" onclick="closeMenu()"></div>
+
+<!-- HERO -->
+<div class="page-hero">
+  <div class="page-hero-inner">
+    <div class="breadcrumb">
+      <a href="index.html">Ana Sayfa</a><span>›</span><span>Referanslar</span>
+    </div>
+    <div class="tag">Mutlu Müşteriler</div>
+    <h1 class="section-title">Bize Güvenen <span>İşletmeler</span></h1>
+    <p class="section-sub">Türkiye'nin dört bir yanındaki kafeler, restoranlar, oteller ve işletmeler makinelerini bize emanet ediyor.</p>
+  </div>
+</div>
+
+<!-- SAYILAR -->
+<div class="numbers-strip reveal">
+  <div class="numbers-inner">
+    <div><div class="num-big">500+</div><div class="num-label">Mutlu Müşteri</div></div>
+    <div><div class="num-big">20+</div><div class="num-label">Hizmet Şehri</div></div>
+    <div><div class="num-big">20+</div><div class="num-label">Yetkili Marka</div></div>
+    <div><div class="num-big">%98</div><div class="num-label">Memnuniyet Oranı</div></div>
+  </div>
+</div>
+
+<!-- MÜŞTERİ YORUMLARI -->
+<section class="ref-section">
+  <div class="ref-inner">
+    <div class="reveal">
+      <div class="tag">Müşteri Yorumları</div>
+      <h2 class="section-title">Onlar Ne <span>Diyor?</span></h2>
+      <p class="section-sub">Gerçek müşterilerimizin Bruno Grup hakkındaki düşünceleri.</p>
+    </div>
+    <div class="testimonials-grid">
+
+      <div class="testi-card reveal">
+        <div class="testi-stars">★★★★★</div>
+        <p class="testi-text">Victoria Arduino makinemiz arıza yaptığında hemen aradık. Aynı gün geldiler, sorunsuz çözdüler. Orijinal parça kullandılar. Çok memnun kaldık.</p>
+        <div class="testi-author">
+          <div class="testi-avatar">AK</div>
+          <div>
+            <div class="testi-name">Ahmet K.</div>
+            <div class="testi-role">Kafe İşletmecisi</div>
+            <div class="testi-brand">Victoria Arduino</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="testi-card reveal">
+        <div class="testi-stars">★★★★★</div>
+        <p class="testi-text">Dalla Corte makinemizin yıllık bakımını Bruno Grup yapıyor. Her seferinde profesyonel, dakik ve titiz çalışıyorlar. Kesinlikle tavsiye ederim.</p>
+        <div class="testi-author">
+          <div class="testi-avatar">SY</div>
+          <div>
+            <div class="testi-name">Selin Y.</div>
+            <div class="testi-role">Özel Kafe Sahibi</div>
+            <div class="testi-brand">Dalla Corte</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="testi-card reveal">
+        <div class="testi-stars">★★★★★</div>
+        <p class="testi-text">Sanremo makinemiz sabah çalışmayı durdurdu. Panikledik. Bruno Grup'u aradık, öğleden önce teknisiniz gelmişti. Kafe açıldı, müşterilerimiz beklemedi.</p>
+        <div class="testi-author">
+          <div class="testi-avatar">MC</div>
+          <div>
+            <div class="testi-name">Mehmet C.</div>
+            <div class="testi-role">Restoran Sahibi</div>
+            <div class="testi-brand">Sanremo</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="testi-card reveal">
+        <div class="testi-stars">★★★★★</div>
+        <p class="testi-text">Yeni kafemizi açarken makine kurulumunu ve danışmanlığı Bruno Grup yaptı. Hangi makineyi alacağımızdan tutun kuruluma kadar her şeyi hallettiler.</p>
+        <div class="testi-author">
+          <div class="testi-avatar">EO</div>
+          <div>
+            <div class="testi-name">Elif O.</div>
+            <div class="testi-role">Yeni İşletme Sahibi</div>
+            <div class="testi-brand">La Marzocco</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="testi-card reveal">
+        <div class="testi-stars">★★★★★</div>
+        <p class="testi-text">Otelimizde 3 adet espresso makinesi var. Hepsinin bakımını düzenli olarak Bruno Grup yapıyor. Hiçbir sorun yaşamadık, iş ortağımız gibi oldular.</p>
+        <div class="testi-author">
+          <div class="testi-avatar">KA</div>
+          <div>
+            <div class="testi-name">Kemal A.</div>
+            <div class="testi-role">Otel F&B Müdürü</div>
+            <div class="testi-brand">WMF & La Cimbali</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="testi-card reveal">
+        <div class="testi-stars">★★★★★</div>
+        <p class="testi-text">WEGA makinemizin pompası bozulmuştu. Başka servisten "2 hafta sürer" dediler. Bruno Grup 2 günde çözdü, üstelik daha uygun fiyata. Artık başka servis aramıyorum.</p>
+        <div class="testi-author">
+          <div class="testi-avatar">ZD</div>
+          <div>
+            <div class="testi-name">Zeynep D.</div>
+            <div class="testi-role">Kafe İşletmecisi</div>
+            <div class="testi-brand">WEGA</div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- REFERANS LOGOLARI -->
+<section class="logos-section">
+  <div class="logos-inner">
+    <div class="reveal">
+      <div class="tag">Referanslarımız</div>
+      <h2 class="section-title">Hizmet Verdiğimiz <span>İşletmeler</span></h2>
+      <p class="section-sub">Kafeler, restoranlar, oteller ve kurumsal işletmeler — hepsine aynı özen ve kaliteyle hizmet veriyoruz.</p>
+    </div>
+    <div class="logos-grid">
+      <div class="logo-card reveal"><div class="logo-placeholder">ÖZEL KAFELER</div><div class="logo-type">Kafe</div></div>
+      <div class="logo-card reveal"><div class="logo-placeholder">ZİNCİR KAFELER</div><div class="logo-type">Zincir</div></div>
+      <div class="logo-card reveal"><div class="logo-placeholder">BUTİK OTELLER</div><div class="logo-type">Otel</div></div>
+      <div class="logo-card reveal"><div class="logo-placeholder">5 YILDIZLI OTELLER</div><div class="logo-type">Otel</div></div>
+      <div class="logo-card reveal"><div class="logo-placeholder">FINE DINING</div><div class="logo-type">Restoran</div></div>
+      <div class="logo-card reveal"><div class="logo-placeholder">KURUMSAL OFİSLER</div><div class="logo-type">Kurumsal</div></div>
+      <div class="logo-card reveal"><div class="logo-placeholder">PASTANELER</div><div class="logo-type">Pastane</div></div>
+      <div class="logo-card reveal"><div class="logo-placeholder">SPESYAL KAHVE</div><div class="logo-type">3. Dalga Kafe</div></div>
+      <div class="logo-card reveal"><div class="logo-placeholder">AVM KAFELER</div><div class="logo-type">AVM</div></div>
+      <div class="logo-card reveal"><div class="logo-placeholder">BARLOUNGER</div><div class="logo-type">Bar</div></div>
+      <div class="logo-card reveal"><div class="logo-placeholder">HASTAHANELER</div><div class="logo-type">Sağlık</div></div>
+      <div class="logo-card reveal" style="background:rgba(245,197,24,0.05);border:1px dashed rgba(245,197,24,0.2);">
+        <div class="logo-placeholder" style="color:var(--yellow);">SİZİN İŞLETMENİZ</div>
+        <div class="logo-type">Sıradaki Referansımız</div>
+      </div>
+    </div>
+    <div style="margin-top:16px;font-size:12px;color:var(--gray);text-align:center;">* Gizlilik nedeniyle müşteri isimleri paylaşılmamaktadır. Referans mektubu talepleriniz için bizi arayın.</div>
+  </div>
+</section>
+
+<!-- CTA -->
+<div class="cta-box reveal">
+  <h2>Siz de Referanslarımız Arasına Katılın</h2>
+  <p>500'den fazla mutlu müşterimiz gibi siz de Bruno Grup'u tercih edin.</p>
+  <div style="display:flex;gap:16px;justify-content:center;flex-wrap:wrap;">
+    <a href="tel:+905343726434" class="btn-primary">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 10.8 19.79 19.79 0 01.22 2.18 2 2 0 012.18 0h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.91 7.09a16 16 0 006 6l.56-.56a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+      0534 372 64 34
+    </a>
+    <a href="iletisim.html" class="btn-outline">Servis Formu →</a>
+  </div>
+</div>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-grid">
+    <div>
+      <div class="footer-logo">
+        <img src="assets/images/logo.png" alt="Bruno Grup" onerror="this.style.display='none';this.nextElementSibling.style.display='block'">
+        <span style="display:none;font-family:'Barlow Condensed',sans-serif;font-size:24px;font-weight:800;">BRUNO<span style="color:#f5c518;">GRUP</span></span>
+      </div>
+      <p class="footer-desc">Endüstriyel espresso kahve makinelerinde 20+ marka yetkili teknik servis.</p>
+    </div>
+    <div>
+      <div class="footer-title">Hizmetler</div>
+      <ul class="footer-links">
+        <li><a href="iletisim.html">Teknik Servis</a></li>
+        <li><a href="iletisim.html">Profesyonel Bakım</a></li>
+        <li><a href="iletisim.html">Makine Satışı</a></li>
+      </ul>
+    </div>
+    <div>
+      <div class="footer-title">Markalar</div>
+      <ul class="footer-links">
+        <li><a href="victoria-arduino.html">Victoria Arduino</a></li>
+        <li><a href="dalla-corte.html">Dalla Corte</a></li>
+        <li><a href="sanremo.html">Sanremo</a></li>
+        <li><a href="markalar.html">Tüm Markalar →</a></li>
+      </ul>
+    </div>
+    <div>
+      <div class="footer-title">İletişim</div>
+      <ul class="footer-links">
+        <li><a href="tel:+905343726434">0534 372 64 34</a></li>
+        <li><a href="https://wa.me/905343726434">WhatsApp</a></li>
+        <li><a href="hakkimizda.html">Hakkımızda</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span class="footer-copy">© 2025 Bruno Grup. Tüm hakları saklıdır.</span>
+    <span class="footer-dev"><a href="https://www.wixmedya.com" target="_blank">Web Tasarım & Reklam: www.wixmedya.com</a></span>
+  </div>
+</footer>
+
+<a href="https://wa.me/905343726434" target="_blank" class="whatsapp-float" aria-label="WhatsApp">
+  <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+</a>
+<a href="tel:+905343726434" class="phone-float" aria-label="Ara">
+  <svg viewBox="0 0 24 24" fill="none" stroke="#111" stroke-width="2.5"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 10.8 19.79 19.79 0 01.22 2.18 2 2 0 012.18 0h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.91 7.09a16 16 0 006 6l.56-.56a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+</a>
+
+<script>
+window.addEventListener('scroll',()=>{document.getElementById('nav').classList.toggle('scrolled',window.scrollY>60);});
+const hb=document.getElementById('hb'),mnav=document.getElementById('mnav'),novl=document.getElementById('novl');
+hb.addEventListener('click',()=>{hb.classList.toggle('open');mnav.classList.toggle('open');novl.classList.toggle('show');document.body.style.overflow=mnav.classList.contains('open')?'hidden':'';});
+function closeMenu(){hb.classList.remove('open');mnav.classList.remove('open');novl.classList.remove('show');document.body.style.overflow='';}
+const obs=new IntersectionObserver(e=>{e.forEach(x=>{if(x.isIntersecting)x.target.classList.add('in');});},{threshold:0.1});
+document.querySelectorAll('.reveal').forEach(el=>obs.observe(el));
+</script>
+</body>
+</html>
