@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Elektra Teknik Servis | Bruno Grup — Yetkili Servis</title>
+<meta name="description" content="Elektra espresso kahve makinesi yetkili teknik servisi. Arıza, bakım, onarım ve yedek parça. Aynı gün yerinde servis. 7/24 destek. Bruno Grup — 0534 372 64 34">
+<meta name="keywords" content="elektra servis, elektra teknik servis, elektra arıza, elektra bakım, elektra tamiri, elektra yetkili servis">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://www.brunogrup.com/elektra.html">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"LocalBusiness","name":"Bruno Grup","description":"Elektra espresso kahve makinesi yetkili teknik servis","telephone":"+905343726434","url":"https://www.brunogrup.com","areaServed":"Türkiye"}
+</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;600;700;800&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/style.css">
+<style>
+.whatsapp-float{position:fixed;bottom:24px;right:24px;z-index:800;width:56px;height:56px;background:#25d366;border-radius:50%;display:flex;align-items:center;justify-content:center;box-shadow:0 4px 20px rgba(37,211,102,0.4);transition:transform .3s;}
+.whatsapp-float:hover{transform:scale(1.1);}
+.whatsapp-float svg{width:28px;height:28px;fill:#fff;}
+.phone-float{position:fixed;bottom:90px;right:24px;z-index:800;width:56px;height:56px;background:var(--yellow);border-radius:50%;display:flex;align-items:center;justify-content:center;box-shadow:0 4px 20px rgba(245,197,24,0.35);transition:transform .3s;}
+.phone-float:hover{transform:scale(1.1);}
+.phone-float svg{width:24px;height:24px;stroke:#111;fill:none;}
+.page-hero{padding:calc(var(--nav-h) + 60px) clamp(20px,5vw,80px) 0;background:var(--dark);position:relative;overflow:hidden;}
+.page-hero::after{content:'';position:absolute;top:0;left:0;right:0;height:3px;background:linear-gradient(90deg,var(--yellow),var(--yellow-dk));}
+.page-hero-inner{max-width:1200px;margin:0 auto;display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:center;padding-bottom:60px;}
+.breadcrumb{display:flex;align-items:center;gap:8px;font-size:12px;color:var(--gray);margin-bottom:20px;}
+.breadcrumb a{color:var(--gray);transition:color .3s;}.breadcrumb a:hover{color:var(--yellow);}
+.hero-img-wrap{position:relative;border-radius:8px;overflow:hidden;box-shadow:0 20px 60px rgba(0,0,0,0.4);}
+.hero-img-wrap img{width:100%;aspect-ratio:4/3;object-fit:cover;}
+.hero-img-badge{position:absolute;top:20px;left:20px;background:var(--yellow);color:var(--black);font-family:var(--font-head);font-size:12px;font-weight:700;letter-spacing:2px;text-transform:uppercase;padding:8px 16px;border-radius:4px;}
+.service-cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:3px;margin-top:48px;}
+.svc-card{background:var(--dark2);padding:32px 28px;position:relative;overflow:hidden;transition:background var(--trans);}
+.svc-card::before{content:'';position:absolute;top:0;left:0;right:0;height:2px;background:var(--yellow);transform:scaleX(0);transform-origin:left;transition:transform var(--trans);}
+.svc-card:hover{background:var(--dark3);}.svc-card:hover::before{transform:scaleX(1);}
+.svc-card h3{font-family:var(--font-head);font-size:18px;font-weight:700;color:var(--white);margin-bottom:10px;}
+.svc-card p{font-size:13px;color:var(--white-mute);line-height:1.8;}
+.models-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:3px;margin-top:40px;}
+.model-card{background:var(--dark2);padding:20px;display:flex;align-items:center;gap:14px;transition:background var(--trans);}
+.model-card:hover{background:var(--dark3);}
+.model-dot{width:8px;height:8px;border-radius:50%;background:var(--yellow);flex-shrink:0;}
+.model-name{font-family:var(--font-head);font-size:15px;font-weight:600;color:var(--white-dim);}
+.faq-list{margin-top:40px;display:flex;flex-direction:column;gap:2px;}
+.faq-item{background:var(--dark2);overflow:hidden;}
+.faq-q{width:100%;text-align:left;font-family:var(--font-head);font-size:16px;font-weight:600;color:var(--white);padding:20px 24px;display:flex;justify-content:space-between;align-items:center;gap:16px;cursor:pointer;transition:color var(--trans);}
+.faq-q:hover{color:var(--yellow);}
+.faq-icon{width:24px;height:24px;flex-shrink:0;border:1.5px solid rgba(255,255,255,0.2);border-radius:50%;display:flex;align-items:center;justify-content:center;color:var(--yellow);transition:transform var(--trans);}
+.faq-item.open .faq-icon{transform:rotate(45deg);}
+.faq-a{font-size:14px;color:var(--white-mute);line-height:1.85;padding:0 24px;max-height:0;overflow:hidden;transition:max-height .4s ease,padding .3s;}
+.faq-item.open .faq-a{max-height:300px;padding:0 24px 20px;}
+.cta-box{background:var(--yellow);padding:clamp(40px,6vw,72px) clamp(20px,5vw,80px);text-align:center;}
+.cta-box h2{font-family:var(--font-head);font-size:clamp(28px,5vw,52px);font-weight:800;color:var(--black);margin-bottom:12px;}
+.cta-box p{font-size:clamp(14px,1.5vw,16px);color:rgba(0,0,0,0.65);margin-bottom:32px;}
+.btn-black{display:inline-flex;align-items:center;gap:10px;background:var(--black);color:var(--white);font-family:var(--font-head);font-size:15px;font-weight:700;letter-spacing:1px;text-transform:uppercase;padding:16px 40px;border-radius:var(--radius);transition:background .3s;}
+.btn-black:hover{background:#333;}
+.other-brands{background:var(--dark);padding:clamp(48px,7vw,80px) clamp(20px,5vw,80px);}
+.other-brands-inner{max-width:1200px;margin:0 auto;}
+.other-brands-grid{display:flex;flex-wrap:wrap;gap:8px;margin-top:32px;}
+.other-brand-pill{font-family:var(--font-head);font-size:13px;font-weight:600;background:var(--dark2);color:var(--white-mute);padding:10px 20px;border-radius:100px;border:1px solid rgba(255,255,255,0.06);transition:all var(--trans);}
+.other-brand-pill:hover{background:rgba(245,197,24,0.1);color:var(--yellow);border-color:rgba(245,197,24,0.25);}
+@media(max-width:768px){.page-hero-inner{grid-template-columns:1fr;}.hero-img-wrap{order:-1;}}
+</style>
+</head>
+<body>
+<nav id="nav">
+  <a href="index.html" class="nav-logo">
+    <img src="assets/images/logo.png" alt="Bruno Grup" onerror="this.style.display='none';this.nextElementSibling.style.display='block'">
+    <span style="display:none;font-family:'Barlow Condensed',sans-serif;font-size:22px;font-weight:800;">BRUNO<span style="color:#f5c518;">GRUP</span></span>
+  </a>
+  <ul class="nav-links">
+    <li><a href="index.html" class="nav-link">Ana Sayfa</a></li>
+    <li><a href="hakkimizda.html" class="nav-link">Hakkımızda</a></li>
+    <li class="nav-dropdown">
+      <div class="nav-dropdown-toggle">Markalar<svg width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 4l4 4 4-4"/></svg></div>
+      <div class="nav-dropdown-menu">
+        <a href="victoria-arduino.html">Victoria Arduino</a><a href="dalla-corte.html">Dalla Corte</a>
+        <a href="sanremo.html">Sanremo</a><a href="la-marzocco.html">La Marzocco</a>
+        <a href="vbm.html">VBM</a><a href="wega.html">WEGA</a>
+        <a href="la-cimbali.html">La Cimbali</a><a href="nuova-simonelli.html">Nuova Simonelli</a>
+        <a href="faema.html">Faema</a><a href="wmf.html">WMF</a>
+        <a href="astoria.html">Astoria</a><a href="casadio.html">Casadio</a>
+        <a href="markalar.html" style="color:#f5c518;font-weight:700;">Tüm Markalar →</a>
+      </div>
+    </li>
+    <li><a href="referanslar.html" class="nav-link">Referanslar</a></li>
+    <li><a href="iletisim.html" class="nav-link">İletişim</a></li>
+  </ul>
+  <div class="nav-right">
+    <a href="tel:+905343726434" class="nav-phone">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 10.8 19.79 19.79 0 01.22 2.18 2 2 0 012.18 0h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.91 7.09a16 16 0 006 6l.56-.56a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+      0534 372 64 34
+    </a>
+    <a href="iletisim.html" class="nav-cta">Servis Al</a>
+  </div>
+  <button class="hamburger" id="hb" aria-label="Menü"><span></span><span></span><span></span></button>
+</nav>
+<div class="mobile-nav" id="mnav">
+  <a href="index.html" class="mobile-nav-link">Ana Sayfa</a>
+  <a href="hakkimizda.html" class="mobile-nav-link">Hakkımızda</a>
+  <a href="markalar.html" class="mobile-nav-link">Tüm Markalar</a>
+  <a href="referanslar.html" class="mobile-nav-link">Referanslar</a>
+  <a href="iletisim.html" class="mobile-nav-link">İletişim</a>
+  <a href="tel:+905343726434" class="mobile-nav-cta">📞 0534 372 64 34</a>
+</div>
+<div class="nav-overlay" id="novl" onclick="closeMenu()"></div>
+
+<div class="page-hero">
+  <div class="page-hero-inner">
+    <div>
+      <div class="breadcrumb">
+        <a href="index.html">Ana Sayfa</a><span>›</span>
+        <a href="markalar.html">Markalar</a><span>›</span>
+        <span>Elektra</span>
+      </div>
+      <div class="tag">Yetkili Teknik Servis</div>
+      <h1 class="section-title">Elektra <span>Teknik Servis</span></h1>
+      <p class="section-sub" style="margin-bottom:32px;">Elektra espresso kahve makinelerinde arıza tespiti, onarım, profesyonel ağır bakım ve orijinal yedek parça hizmeti sunuyoruz. Tüm modellerde uzman ekip, aynı gün yerinde servis.</p>
+      <div style="display:flex;flex-wrap:wrap;gap:12px;">
+        <a href="tel:+905343726434" class="btn-primary">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 10.8 19.79 19.79 0 01.22 2.18 2 2 0 012.18 0h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.91 7.09a16 16 0 006 6l.56-.56a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+          Hemen Ara
+        </a>
+        <a href="https://wa.me/905343726434?text=Elektra makinemde sorun var" target="_blank" class="btn-outline">WhatsApp ile Yaz</a>
+      </div>
+      <div style="display:flex;gap:32px;margin-top:36px;flex-wrap:wrap;">
+        <div><div style="font-family:'Barlow Condensed',sans-serif;font-size:28px;font-weight:800;color:var(--yellow);">7/24</div><div style="font-size:11px;color:var(--gray);letter-spacing:1px;text-transform:uppercase;">Teknik Destek</div></div>
+        <div><div style="font-family:'Barlow Condensed',sans-serif;font-size:28px;font-weight:800;color:var(--yellow);">Aynı Gün</div><div style="font-size:11px;color:var(--gray);letter-spacing:1px;text-transform:uppercase;">Yerinde Servis</div></div>
+        <div><div style="font-family:'Barlow Condensed',sans-serif;font-size:28px;font-weight:800;color:var(--yellow);">Orijinal</div><div style="font-size:11px;color:var(--gray);letter-spacing:1px;text-transform:uppercase;">Yedek Parça</div></div>
+      </div>
+    </div>
+    <div class="hero-img-wrap reveal">
+      <div class="hero-img-badge">Yetkili Servis</div>
+      <img src="https://brunogrup.com/wp-content/uploads/2025/02/faema_teknik_servis_bruno_grup_faema_yetkili_servis_bruno_grup.jpg" alt="Elektra Espresso Makinesi Teknik Servis Bruno Grup">
+    </div>
+  </div>
+</div>
+<div class="divider"></div>
+
+<section style="background:var(--black);padding:var(--pad);">
+  <div style="max-width:1200px;margin:0 auto;">
+    <div class="reveal"><div class="tag">Hizmetlerimiz</div><h2 class="section-title">Elektra İçin <span>Ne Yapıyoruz?</span></h2><p class="section-sub">Tüm Elektra modellerinde kapsamlı teknik servis ve bakım hizmetleri sunuyoruz.</p></div>
+    <div class="service-cards">
+      <div class="svc-card reveal"><h3>🔧 Arıza Tespiti & Onarım</h3><p>Elektra makinenizde yaşanan her türlü arızayı gelişmiş ekipmanlarla tespit edip hızlıca onarıyoruz.</p></div>
+      <div class="svc-card reveal"><h3>⚙️ Profesyonel Ağır Bakım</h3><p>Kireç temizliği, pompa kontrolü, grup başı bakımı, kalibrasyon. Makineniz fabrika performansına kavuşur.</p></div>
+      <div class="svc-card reveal"><h3>🔩 Orijinal Yedek Parça</h3><p>Sadece orijinal Elektra yedek parçaları kullanıyoruz. Tüm parçalar garantili ve faturalandırılır.</p></div>
+      <div class="svc-card reveal"><h3>📦 Ücretsiz Yedek Makine</h3><p>Makineniz servis süresince işletmenizde durmak zorunda değil. Ücretsiz yedek makine sağlıyoruz.</p></div>
+      <div class="svc-card reveal"><h3>🏠 Aynı Gün Yerinde Servis</h3><p>Sabah arayın, öğleden sonra teknisyenimiz işletmenizde. 20+ şehirde hızlı servis ağı.</p></div>
+      <div class="svc-card reveal"><h3>📞 7/24 Teknik Destek</h3><p>Gece gündüz, hafta sonu dahil telefon ve WhatsApp ile teknik destek alabilirsiniz.</p></div>
+    </div>
+  </div>
+</section>
+<div class="divider"></div>
+
+<section style="background:var(--dark);padding:var(--pad);">
+  <div style="max-width:1200px;margin:0 auto;">
+    <div class="reveal"><div class="tag">Desteklenen Modeller</div><h2 class="section-title">Servis Verdiğimiz <span>Elektra Modelleri</span></h2></div>
+    <div class="models-grid">
+      <div class="model-card reveal"><div class="model-dot"></div><div class="model-name">Bianca</div></div>
+      <div class="model-card reveal"><div class="model-dot"></div><div class="model-name">Barlume</div></div>
+      <div class="model-card reveal"><div class="model-dot"></div><div class="model-name">Sixties</div></div>
+      <div class="model-card reveal"><div class="model-dot"></div><div class="model-name">Verve</div></div>
+      <div class="model-card reveal"><div class="model-dot"></div><div class="model-name">ART</div></div>
+      <div class="model-card reveal"><div class="model-dot"></div><div class="model-name">MICRO</div></div>
+      <div class="model-card reveal"><div class="model-dot"></div><div class="model-name">CASA</div></div>
+      <div class="model-card reveal" style="background:rgba(245,197,24,0.05);border:1px dashed rgba(245,197,24,0.2);"><div class="model-dot" style="background:var(--yellow);"></div><div class="model-name" style="color:var(--yellow);">Modeliniz Listede Yok mu? Arayın →</div></div>
+    </div>
+  </div>
+</section>
+<div class="divider"></div>
+
+<div class="cta-box reveal">
+  <h2>Elektra Makinenizde Sorun mu Var?</h2>
+  <p>Hemen arayın, en kısa sürede yerinde servis gönderelim.</p>
+  <div style="display:flex;gap:16px;justify-content:center;flex-wrap:wrap;">
+    <a href="tel:+905343726434" class="btn-black">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 10.8 19.79 19.79 0 01.22 2.18 2 2 0 012.18 0h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.91 7.09a16 16 0 006 6l.56-.56a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+      0534 372 64 34
+    </a>
+    <a href="https://wa.me/905343726434?text=Elektra makinemde sorun var" target="_blank" style="display:inline-flex;align-items:center;gap:10px;background:#25d366;color:#fff;font-family:'Barlow Condensed',sans-serif;font-size:15px;font-weight:700;letter-spacing:1px;text-transform:uppercase;padding:16px 40px;border-radius:4px;">WhatsApp</a>
+  </div>
+</div>
+
+<div class="other-brands">
+  <div class="other-brands-inner">
+    <div class="reveal"><div class="tag">Diğer Markalar</div><h2 class="section-title">Diğer Servis <span>Verdiğimiz Markalar</span></h2></div>
+    <div class="other-brands-grid reveal">
+      <a href="victoria-arduino.html" class="other-brand-pill">Victoria Arduino</a>
+      <a href="dalla-corte.html" class="other-brand-pill">Dalla Corte</a>
+      <a href="sanremo.html" class="other-brand-pill">Sanremo</a>
+      <a href="la-marzocco.html" class="other-brand-pill">La Marzocco</a>
+      <a href="vbm.html" class="other-brand-pill">VBM</a>
+      <a href="wega.html" class="other-brand-pill">WEGA</a>
+      <a href="la-cimbali.html" class="other-brand-pill">La Cimbali</a>
+      <a href="nuova-simonelli.html" class="other-brand-pill">Nuova Simonelli</a>
+      <a href="faema.html" class="other-brand-pill">Faema</a>
+      <a href="wmf.html" class="other-brand-pill">WMF</a>
+      <a href="astoria.html" class="other-brand-pill">Astoria</a>
+      <a href="casadio.html" class="other-brand-pill">Casadio</a>
+      <a href="markalar.html" class="other-brand-pill" style="background:rgba(245,197,24,0.1);color:var(--yellow);border-color:rgba(245,197,24,0.25);">Tüm Markalar →</a>
+    </div>
+  </div>
+</div>
+
+<footer>
+  <div class="footer-grid">
+    <div>
+      <div class="footer-logo"><img src="assets/images/logo.png" alt="Bruno Grup" onerror="this.style.display='none';this.nextElementSibling.style.display='block'"><span style="display:none;font-family:'Barlow Condensed',sans-serif;font-size:24px;font-weight:800;">BRUNO<span style="color:#f5c518;">GRUP</span></span></div>
+      <p class="footer-desc">Endüstriyel espresso kahve makinelerinde 20+ marka yetkili teknik servis.</p>
+    </div>
+    <div><div class="footer-title">Hizmetler</div><ul class="footer-links"><li><a href="iletisim.html">Teknik Servis</a></li><li><a href="iletisim.html">Profesyonel Bakım</a></li><li><a href="iletisim.html">Makine Satışı</a></li></ul></div>
+    <div><div class="footer-title">Markalar</div><ul class="footer-links"><li><a href="victoria-arduino.html">Victoria Arduino</a></li><li><a href="dalla-corte.html">Dalla Corte</a></li><li><a href="sanremo.html">Sanremo</a></li><li><a href="markalar.html">Tüm Markalar →</a></li></ul></div>
+    <div><div class="footer-title">İletişim</div><ul class="footer-links"><li><a href="tel:+905343726434">0534 372 64 34</a></li><li><a href="https://wa.me/905343726434">WhatsApp</a></li><li><a href="index.html">Ana Sayfa</a></li></ul></div>
+  </div>
+  <div class="footer-bottom">
+    <span class="footer-copy">© 2025 Bruno Grup. Tüm hakları saklıdır.</span>
+    <span class="footer-dev"><a href="https://www.wixmedya.com" target="_blank">Web Tasarım & Reklam: www.wixmedya.com</a></span>
+  </div>
+</footer>
+
+<a href="https://wa.me/905343726434?text=Elektra makinemde sorun var" target="_blank" class="whatsapp-float" aria-label="WhatsApp"><svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg></a>
+<a href="tel:+905343726434" class="phone-float" aria-label="Ara"><svg viewBox="0 0 24 24" fill="none" stroke="#111" stroke-width="2.5"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 10.8 19.79 19.79 0 01.22 2.18 2 2 0 012.18 0h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.91 7.09a16 16 0 006 6l.56-.56a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg></a>
+
+<script>
+window.addEventListener('scroll',()=>{document.getElementById('nav').classList.toggle('scrolled',window.scrollY>60);});
+const hb=document.getElementById('hb'),mnav=document.getElementById('mnav'),novl=document.getElementById('novl');
+hb.addEventListener('click',()=>{hb.classList.toggle('open');mnav.classList.toggle('open');novl.classList.toggle('show');document.body.style.overflow=mnav.classList.contains('open')?'hidden':'';});
+function closeMenu(){hb.classList.remove('open');mnav.classList.remove('open');novl.classList.remove('show');document.body.style.overflow='';}
+function toggleFaq(btn){const item=btn.parentElement;const isOpen=item.classList.contains('open');document.querySelectorAll('.faq-item').forEach(i=>i.classList.remove('open'));if(!isOpen)item.classList.add('open');}
+const obs=new IntersectionObserver(e=>{e.forEach(x=>{if(x.isIntersecting)x.target.classList.add('in');});},{threshold:0.1});
+document.querySelectorAll('.reveal').forEach(el=>obs.observe(el));
+</script>
+</body>
+</html>
