@@ -268,7 +268,7 @@ footer{background:var(--black);padding:56px var(--pad) 28px;}
   .hero-btns{flex-direction:column;}
   .btn-blk,.btn-out{width:100%;justify-content:center;}
   .brands-grid{grid-template-columns:repeat(2,1fr);}
-  .hero-stats{flex-direction:column;gap:12px;}
+  .hero-stats{flex-direction:row;gap:20px;justify-content:flex-start;}
   .about-stats{grid-template-columns:1fr;}
 }
 </style>
